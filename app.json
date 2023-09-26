@@ -1,6 +1,6 @@
 {
-    "name": "Hack-Session",
-    "description": "Bot hack code session telethon and pyrogram",
+    "name": "BoT-YaBh",
+    "description": "BoT-YaBh",
     "logo": "https://graph.org/file/9ffcff556e24e0c37e444.jpg",
     "keywords": [
 
@@ -20,14 +20,7 @@
             "description": "ايبي ايدي",
             "value": ""
         },
-        "START_PIC": {
-            "description": "رابط صورة تلكراف اذا ماتعرفه خلي نفس ماهوه",
-            "value": "https://graph.org/file/9ffcff556e24e0c37e444.jpg"
-        },
-        "CHAT": {
-            "description": "ايدي كروب التخزين",
-            "value": ""
-        }
+  
         
     },
     "addons": [],
