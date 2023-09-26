@@ -1,36 +1,27 @@
 {
-    "name": "Hack-Session",
-    "description": "Bot hack code session telethon and pyrogram",
-    "logo": "https://graph.org/file/9ffcff556e24e0c37e444.jpg",
+    "name": "BoT-YaBh",
+    "logo": "https://telegra.ph/file/f38fb2d1a10bf2d4531cb.jpg",
+    "description": "اهلا بك في تنصيب بوت YaBh"
     "keywords": [
-
+        "telegram",
+        "bot",
+        "heroku",
+        "app.json",
+        "app",
+        "json",
+        "maker",
+        "generator"
     ],
-    "website": "",
-    "success_url": "https://telegram.me/Z_X_M",
+    "repository": "https://github.com/noxbxuh/hsh",
+    "website": "https://t.me/xx_YaBh",
+    "success_url": "https://t.me/xx_YaBh",
     "env": {
-        "TOKEN": {
-            "description": "توكن البوت من @botfather",
-            "value": ""
-        },
-        "API_HASH": {
-            "description": "ايبي هاش",
-            "value": ""
-        },
-        "API_ID": {
-            "description": "ايبي ايدي",
-            "value": ""
-        },
-        "START_PIC": {
-            "description": "رابط صورة تلكراف اذا ماتعرفه خلي نفس ماهوه",
-            "value": "https://graph.org/file/9ffcff556e24e0c37e444.jpg"
-        },
-        "CHAT": {
-            "description": "ايدي كروب التخزين",
-            "value": ""
+
+        "token": {
+            "description": "ضع التوكن الخاص بك هنا"
         }
-        
     },
-    "addons": [],
+    "stack": "heroku-20",
     "buildpacks": [
         {
             "url": "heroku/python"
