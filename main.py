@@ -8,7 +8,7 @@ from random import choices
 import time ;import os
 from telethon.tl.functions.messages import GetPeerDialogsRequest
 
-StrPython = TelegramClient("",API_ID=15145595, API_HASH="c3f60ecf742e136436acc9082ac8d9a4")
+
 StrPython.start()
 band = []
 
