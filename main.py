@@ -40,22 +40,9 @@ This BoT Checker TeLeGram 🐊
 
 @app.on_message(filters.command(" Turbo","–"))
 async def m(app,msg):
-    		await app.send_message(msg.chat.id, "اهلا بك في لوحه تحكم اختيار الرقم \n قم بتحديد الرقم لتذهب الى ازرار تحكم التيربو", reply_markup=ReplyKeyboardMarkup(
+    		await app.send_message(msg.chat.id, "اهلا بك في لوحه التحكم 🗽  ", reply_markup=ReplyKeyboardMarkup(
     [[
-      "– Number ①", "– Number ②"
-    ],[
-      "– Number ③", "– Number ④"
-    ],[
-      "– Number ⑤", "– Number ⑥"
-    ],[
-      "– Number ⑦", "– Number ⑧"
-    ],[
-      "– Number ⑨", "– Number ①⓪"
-    ],[ 
-    "– Number ①①", "– Number ①②"
-    ],[
-      "– Number ①③", "– Number ①④"
-    ]]
+      "– Number 1", 
   ))
 a = 'qwertyuiopassdfghjklzxcvbnm'
 b = '1234567890'
@@ -67,24 +54,24 @@ sed = ["off"]
 async def greetings(app,msg):
     	await app.send_message(msg.chat.id, "Wel .", reply_markup=ReplyKeyboardMarkup(
     [[
-      "– DeLeTe The Number ①"
+      "– DeLeTe The Number "
     ],[
-      "– Add LiSt ①", "– DeLeTe LiSt ①"
+      "– Add LiSt ", "– DeLeTe LiSt "
     ],[
-      "– Clicks LiSt ①"
+      "– Clicks LiSt "
     ],[
-      "– UserName Availble ①"
+      "– UserName Availble "
     ],[
-      "– UserName Last SeeN ①"
+      "– UserName Last SeeN "
     ],[
-      "– Add User in List ①", "– Delete ①"
+      "– Add User in List ", "– Delete "
     ],[
-      "– Edit NaMe ①", "– Edit Bio ①"
+      "– Edit NaMe ", "– Edit Bio "
     ]]
   ))
 
 
-@app.on_message(filters.command(" Clicks LiSt ①","–"))
+@app.on_message(filters.command(" Clicks LiSt ","–"))
 async def bhton(app,msg):
         while True :
             await asyncio.sleep(0.0)
@@ -102,15 +89,15 @@ async def bh(app,msg):
     	# -
     	# -
     	
-@app.on_message(filters.command(" Add LiSt ①","–"))
+@app.on_message(filters.command(" Add LiSt ","–"))
 async def turbo(app,msg):
     	await app.send_message(msg.chat.id, "𝐭.", reply_markup=ReplyKeyboardMarkup(
     [[
-      "– CH ①", "– BotF ①"
+      "– CH ", "– BotF "
     ]]
   ))
 
-@app.on_message(filters.command(" DeLeTe LiSt ①","–"))
+@app.on_message(filters.command(" DeLeTe LiSt ","–"))
 async def nn(app,msg):
 	   	await app.send_message(msg.chat.id, "I am waiting ...")
 	   	filename = "list.txt"
@@ -118,14 +105,14 @@ async def nn(app,msg):
 	   	f = open("list.txt", "x")
 	   	await app.send_message(msg.chat.id,"DoNe DeLeTe ALL LiSt")
 	   	
-@app.on_message(filters.command(" Edit NaMe ①","–"))
+@app.on_message(filters.command(" Edit NaMe ","–"))
 async def Bh(app,msg):
 	   	jmth = await app.ask(msg.chat.id, "Please SeNd Name NoW\nEx: Ahmed Ali")
 	   	jmt = jmth.text
 	   	await ac.update_profile(first_name=jmt)
 	   	await app.send_message(msg.chat.id, f"تم بنجاح تغيير الاسم الى . {j}")
 	   	return
-@app.on_message(filters.command(" Edit Bio ①","–"))
+@app.on_message(filters.command(" Edit Bio ","–"))
 async def mm(app,msg):
 	   	pktk = await app.ask(msg.chat.id, "Please SeNd ThE Bio \nEx: hello me ali . . .")
 	   	pio = pktk.text
@@ -133,7 +120,7 @@ async def mm(app,msg):
 	   	await app.send_message(msg.chat.id, f"تم بنجاح تغيير البايو الى \n {pio}")
 	   	
 	   	
-@app.on_message(filters.command(" UserName Availble ①","–"))
+@app.on_message(filters.command(" UserName Availble ","–"))
 async def kkjs(app, msg):
     	await app.send_message(msg.chat.id, f"اهلا بك عزيزي . {msg.from_user.first_name} .\nاختر النوع الان من الازرار التاليه . ", reply_markup=ReplyKeyboardMarkup(
     [[
@@ -147,10 +134,10 @@ async def kkjs(app, msg):
     ]]
   ))
   
-@app.on_message(filters.command("_b_n - ①","a"))
+@app.on_message(filters.command("_b_n - ","a"))
 async def ks(app, msg):
     	now = datetime.datetime.now()
-    	await app.send_message(msg.chat.id, "DonE , a_b_n - ①")
+    	await app.send_message(msg.chat.id, "DonE , a_b_n - ")
     	c = random.choices(a)
     	d = random.choices(a)
     	s = random.choices(e)
@@ -163,9 +150,9 @@ async def ks(app, msg):
     	except Exception as e:
     		print(e)
 
-@app.on_message(filters.command("_1_n - ①","a"))
+@app.on_message(filters.command("_1_n - ","a"))
 async def ks(app, msg):
-    	await app.send_message(msg.chat.id, "DonE , a_1_n - ①")
+    	await app.send_message(msg.chat.id, "DonE , a_1_n - ")
     	now = datetime.datetime.now()
     	cc = random.choices(a)
     	dd = random.choices(b)
@@ -182,7 +169,7 @@ async def ks(app, msg):
    
    
 	 		
-@app.on_message(filters.command("_6_1 - ①","a"))
+@app.on_message(filters.command("_1_n - ","a"))
 async def ksb(app, msg):
     	await app.send_message(msg.chat.id, "DonE , a_6_1 - ①")
     	ccc = random.choices(a)
@@ -197,9 +184,9 @@ async def ksb(app, msg):
     	except Exception as e:
     		print(e)
             	
-@app.on_message(filters.command("aaab - ①","a"))
+@app.on_message(filters.command("aaab - ","a"))
 async def ks(app, msg):
-    	await app.send_message(msg.chat.id, "DonE , aaaab - ①")
+    	await app.send_message(msg.chat.id, "DonE , aaaab - ")
     	now = datetime.datetime.now()
     	cb = random.choices(a)
     	db = random.choices(b)
@@ -214,9 +201,9 @@ async def ks(app, msg):
     	except Exception as e:
     		print(e)
 
-@app.on_message(filters.command("b111 - ①","a"))
+@app.on_message(filters.command("b111 - ","a"))
 async def ks(app, msg):
-    	await app.send_message(msg.chat.id, "DonE , ab111 - ①")
+    	await app.send_message(msg.chat.id, "DonE , ab111 - ")
     	now = datetime.datetime.now()
     	cq = random.choices(a)
     	dq = random.choices(b)
@@ -231,9 +218,9 @@ async def ks(app, msg):
     	except Exception as e:
     		print(e)
     		
-@app.on_message(filters.command("ip139 - ①","v"))
+@app.on_message(filters.command("ip139 - ","v"))
 async def ks(app, msg):
-    	await app.send_message(msg.chat.id, "DonE , vip - ①")
+    	await app.send_message(msg.chat.id, "DonE , vip - ")
     	now = datetime.datetime.now()
     	ka = random.choices(a)
     	fh = random.choices(b)
@@ -247,9 +234,9 @@ async def ks(app, msg):
     	except Exception as e:
     		print(e)
     		
-@app.on_message(filters.command("aa111 - ①","a"))
+@app.on_message(filters.command("aa111 - ","a"))
 async def ks(app, msg):
-    	await app.send_message(msg.chat.id, "DonE , aaa111 - ①")
+    	await app.send_message(msg.chat.id, "DonE , aaa111 - ")
     	now = datetime.datetime.now()
     	ia = random.choices(a)
     	ds = random.choices(b)
@@ -307,7 +294,7 @@ async def ksk(app, msg):
     			await app.send_message(msg.chat.id, "The user is already pined !")
     			return 
     	
-@app.on_message(filters.command(" DeLeTe ①","–"))
+@app.on_message(filters.command(" DeLeTe ","–"))
 async def ks(app, msg):
     d = open("list.txt","r")
     cs = d.read()
@@ -340,20 +327,20 @@ async def ks(app, msg):
 async def ks(app, msg):
     	await app.send_message(msg.chat.id, "oky now Locate....", reply_markup=ReplyKeyboardMarkup(
     [[
-  	"ادخال وفحص - ①", "تخمين عشوائي - ①"
+  	"ادخال وفحص - ", "تخمين عشوائي - "
     ]]
   ))
-@app.on_message(filters.command("خمين عشوائي - ①","ت"))
+@app.on_message(filters.command("خمين عشوائي - ","ت"))
 async def ks(app, msg):
     await app.send_message(msg.chat.id, "حدد النوع...", reply_markup=ReplyKeyboardMarkup(
     [[
-  	"vip028 - ①.", "aaaae - ①."
+  	"vip028 - .", "aaaae - ."
 	],[
-	  "ak111 - ①."
+	  "ak111 - ."
     ]]
   ))
   
-@app.on_message(filters.command("ip028 - ①.","v"))
+@app.on_message(filters.command("ip028 - .","v"))
 async def ks(app, msg):
     	bbk = "1234567890"
     	km = "vip"
@@ -366,14 +353,14 @@ async def ks(app, msg):
     		while True :
     			
     			await asyncio.sleep(1)
-    			msg.edit("①")
+    			msg.edit("1")
     			await asyncio.sleep(1)
-    			msg.edit("②")
+    			msg.edit("2")
     			await asyncio.sleep(1)
-    			msg.edit("③")
+    			msg.edit("3")
     			await app.send_message(msg.chat.id, f"@{bhton}\n{kmbe.next_offline_date}")
     			
-@app.on_message(filters.command("aaae - ①.","a"))
+@app.on_message(filters.command("aaae - .","a"))
 async def ks(app, msg):
     	turb = random.choices(a)
     	bh = random.choices(a)
@@ -384,14 +371,14 @@ async def ks(app, msg):
     		await app.send_message(msg.chat.id, "جار تخمين يوزر جديد يرجى الانتضار لمده 3 ثواني")
     		while True :
     			await asyncio.sleep(1)
-    			msg.edit("①")
+    			msg.edit("1")
     			await asyncio.sleep(1)
-    			msg.edit("②")
+    			msg.edit("2")
     			await asyncio.sleep(1)
-    			msg.edit("③")
+    			msg.edit("3")
     			await app.send_message(msg.chat.id, f"@{bhton1}\n{kmbe.next_offline_date}")
    
-@app.on_message(filters.command("b111 - ①.","a"))
+@app.on_message(filters.command("b111 - .","a"))
 async def ks(app, msg):
     	cq = random.choices(a)
     	dq = random.choices(b)
@@ -404,22 +391,22 @@ async def ks(app, msg):
     		await app.send_message(msg.chat.id, "جار تخمين يوزر جديد يرجى الانتضار لمده 3 ثواني")
     		while True :
     			await asyncio.sleep(1)
-    			msg.edit("①")
+    			msg.edit("1")
     			await asyncio.sleep(1)
-    			msg.edit("②")
+    			msg.edit("2")
     			await asyncio.sleep(1)
-    			msg.edit("③")
+    			msg.edit("3")
     			await app.send_message(msg.chat.id, f"username:. @{username4}\n{kmbe.next_offline_date}")
 
 
-@app.on_message(filters.command(" دخال وفحص - ①","ا"))
+@app.on_message(filters.command(" دخال وفحص - ","ا"))
 async def Bskk(app,msg):
 	k = await app.ask(msg.chat.id, "SENd UserName")
 	kh = k.text
 	kn = await ac.get_users(kh)
 	await app.send_message(msg.chat.id, f"User: @{kh}\n{kn.next_offline_date}")
 	
-@app.on_message(filters.command(" BotF ①","–"))
+@app.on_message(filters.command(" BotF ","–"))
 async def em(app,msg):
 	    	btna1 = await app.ask(msg.chat.id, "send UsErs Now")
 	    	Us = btna1.text
@@ -447,7 +434,7 @@ async def em(app,msg):
     			except:
     				await app.send_message(msg.chat.id, f"حدث خطا مع {user}")
     				
-@app.on_message(filters.command(" CH ①","–"))
+@app.on_message(filters.command(" CH ","–"))
 async def m(app,msg):
 	   	btna = await app.ask(msg.chat.id, "**||Send UsErS in LiSt**||\nEx: bbbfb\njjjij\nkkkk1\nvip89**||")
 	   	ui = btna
@@ -465,8 +452,8 @@ async def m(app,msg):
 	   		
 	   	if "tgme_username_link" in ui:
 	   		try:
-	   			ch = await ac.create_channel("x.Y 🇮🇶")
-	   			await ac.set_chat_username(ch, ui)
+	   			ch = await ac.create_channel("YaBh")
+				await ac.set_chat_username(ch, ui)
 	   			msu = await ac.get_me(phone)
 	   			await app.send_message(msg.chat.id, f"نحن الاقوى . 🐊\n المعرف : @{ui}\nالرقم : {msu}+")
 	   		except:
